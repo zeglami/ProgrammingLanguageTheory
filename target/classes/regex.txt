@@ -1,0 +1,34 @@
+e+ => e or ee or eee at least one e or more
+as? => a than an optional s
+as* => start by a and have 0 s or more
+as* => start by a and have 0 s or more
+.as* => dot can be anything than start by a and have 0 s or more
+
+\.  =>to ignore .  , search for do
+
+\w => Search for any word
+\s => search for white space
+\w{4} => Search 4 digit of any word
+\w{4,} => Search 4 or more digit of any word
+\w{4,5} => Search 4 or 5 digit of any word
+
+[a-z]oc => any thing from a to z than oc
+[a-zA-Z]oc => any thing from a to z and A to Z than oc
+[0-9]oc => any thing from a to z and A to Z than oc
+(w|W)o => any thing start with w or W  than o
+(T|t)he => The or the
+(t|e|r){2,3} => The or the
+
+
+^T => star of the text or the line(if it s multilines config)
+
+
+(?<=[tT]he). => get the word after the and The
+(?<![tT]he). => eything expect get the word after the and The
+.(?=at) => eything expect get the word after the and The
+.(?=oc) => anything before oc
+.(?!oc) => negation of .(?=oc)
+\d{3}-?\d{3}-?\d{4} => 1234567890 123-456-7890
+
+
+
